@@ -12,7 +12,7 @@
     quick-tap-ms = <0>;
 };
 
-& {
+&keymap {
     combos { compatible = "zmk,combos"; };
 
     behaviors {
