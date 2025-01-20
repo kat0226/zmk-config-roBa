@@ -78,10 +78,10 @@
 
         NUM {
             bindings = <
-&kp ASTERISK     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                                         &kp F1                &kp F2   &kp F3   &kp F4   &trans
-&kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &trans          &kp C_VOL_UP          &kp F5                &kp F6   &kp F7   &kp F8   &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL  &kp K_MUTE      &kp C_VOLUME_DOWN     &kp F9                &kp F10  &kp F11  &kp F12  &trans
-&trans           &trans           &trans           &trans           &trans     &trans          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC                             &trans
+&kp ASTERISK     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                                             &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp F2   &kp F3   &kp F4   &trans
+&kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp C_SNAPSHOT      &kp C_VOL_UP          &kp F5                                &kp F6   &kp F7   &kp F8   &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL  &kp K_MUTE          &kp C_VOLUME_DOWN     &kp F9                                &kp F10  &kp F11  &kp F12  &trans
+&trans           &trans           &trans           &trans           &trans     &trans              &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC                                             &trans
             >;
         };
 
