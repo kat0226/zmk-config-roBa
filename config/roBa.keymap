@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
-# スクロールレイヤーを5→2に
 #define SCROLL 2
 #define NUM 6
 
