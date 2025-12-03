@@ -33,7 +33,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-     tog_on: toggle_layer_on_only {
+
+        tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer On";
@@ -45,7 +46,7 @@
             #binding-cells = <1>;
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
-        }; 
+        };
     };
 
     keymap {
@@ -93,10 +94,10 @@
 
         SurfaceDef {
             bindings = <
-&kp Q           &kp W                      &kp E                        &kp R                        &kp T                                                              &kp Y            &kp U                &kp I                &kp O    &kp P
-&kp A           &kp S                      &kp D                        &kp F                        &kp G        &mt C_VOL_DN C_VOL_DN        &mt C_VOL_UP C_VOL_UP    &kp H            &mt RIGHT_WIN J  &mt RIGHT_CONTROL K  &lt 2 L  &lt 6 MINUS
-&kp Z           &kp X                      &kp C                        &kp V                        &kp B        &mkp MB1                     &mkp MB2                 &kp N            &kp M                &kp COMMA            &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt_to_layer_4 5 LANGUAGE_2  &lt 6 SPACE  &mt RIGHT_CONTROL LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                                     &kp RIGHT_SHIFT
+&kp Q           &kp W                      &kp E                        &kp R                   &kp T                                                              &kp Y            &kp U            &kp I                &kp O    &kp P
+&kp A           &kp S                      &kp D                        &kp F                   &kp G        &mt C_VOL_DN C_VOL_DN        &mt C_VOL_UP C_VOL_UP    &kp H            &mt RIGHT_WIN J  &mt RIGHT_CONTROL K  &lt 2 L  &lt 6 MINUS
+&kp Z           &kp X                      &kp C                        &kp V                   &kp B        &mkp MB1                     &mkp MB2                 &kp N            &kp M            &kp COMMA            &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt_to_layer_0 5 LANG2  &lt 6 SPACE  &mt RIGHT_CONTROL LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                                 &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -104,10 +105,10 @@
 
         SurfaceNum {
             bindings = <
-&trans          &trans                 &trans                   &trans         &trans                                                             &kp ASTERISK                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS
-&kp LEFT_SHIFT  &mt C_VOL_UP C_VOL_UP  &mt C_BRI_INC C_BRI_INC  &kp C_AC_HOME  &kp GLOBE         &kp K_MUTE            &mt UP_ARROW UP_ARROW      &kp SLASH                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
-&trans          &mt C_VOL_DN C_VOL_DN  &mt C_BRI_DEC C_BRI_DEC  &kp F12        &kp LEFT_COMMAND  &kp LEFT_CONTROL      &mt DOWN_ARROW DOWN_ARROW  &kp KP_NUMBER_0              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
-&kp ESCAPE      &trans                 &trans                   &trans         &trans            &trans                &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW                                                     &kp TAB
+&trans          &trans                 &trans                   &trans         &trans                                                             &kp ASTRK                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+&kp LEFT_SHIFT  &mt C_VOL_UP C_VOL_UP  &mt C_BRI_INC C_BRI_INC  &kp C_AC_HOME  &kp GLOBE         &kp K_MUTE            &mt UP_ARROW UP_ARROW      &kp SLASH                    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&trans          &mt C_VOL_DN C_VOL_DN  &mt C_BRI_DEC C_BRI_DEC  &kp F12        &kp LEFT_COMMAND  &kp LEFT_CONTROL      &mt DOWN_ARROW DOWN_ARROW  &kp NUMBER_0                 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
+&kp ESCAPE      &trans                 &trans                   &trans         &trans            &trans                &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW                                            &kp TAB
             >;
         };
 
