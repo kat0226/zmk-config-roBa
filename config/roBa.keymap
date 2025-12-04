@@ -19,7 +19,7 @@
         surface: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&macro_wait_time 400>, <&to 4>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 400>, <&to 4>;
 
             label = "TO_LAYER_0";
         };
