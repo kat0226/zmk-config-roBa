@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_off 0 &tog_off 4>,
+                <&tog_off 0 &tog_off 1>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 400>,
@@ -33,11 +33,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_off 0 &tog_off 4>,
+                <&tog_off 0 &tog_off 1>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 400>,
-                <&tog_on 4>;
+                <&tog_on 1>;
 
             label = "NEW_MACRO";
         };
@@ -74,12 +74,23 @@
         default_layer {
             bindings = <
 &kp Q           &kp W                      &kp E                        &kp R             &kp T                                                              &kp Y            &kp U                &kp I                &kp O    &kp P
-&kp A           &kp S                      &kp D                        &kp F             &kp G        &mt C_VOL_DN C_VOL_DN        &mt C_VOL_UP C_VOL_UP    &kp H            &mt RIGHT_CONTROL J  &mt RIGHT_COMMAND K  &lt 2 L  &lt 3 MINUS
+&kp A           &kp S                      &kp D                        &kp F             &kp G        &mt C_VOL_DN C_VOL_DN        &mt C_VOL_UP C_VOL_UP    &kp H            &mt RIGHT_CONTROL J  &mt RIGHT_COMMAND K  &lt 3 L  &lt 4 MINUS
 &kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                     &mkp MB2                 &kp N            &kp M                &kp COMMA            &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 1 LANGUAGE_2  &lt 2 SPACE  &mt RIGHT_COMMAND LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                                     &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 2 LANGUAGE_2  &lt 3 SPACE  &mt RIGHT_COMMAND LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                                     &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
+        };
+
+        SurfaceDef {
+            bindings = <
+&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                              &kp Y            &kp U            &kp I                &kp O    &mt RIGHT_ALT P
+&kp A           &kp S                      &kp D                        &kp F             &kp G        &mt C_VOL_DN C_VOL_DN        &mt C_VOL_UP C_VOL_UP    &kp H            &mt RIGHT_WIN J  &mt RIGHT_CONTROL K  &lt 3 L  &lt 4 MINUS
+&kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                     &mkp MB2                 &kp N            &kp M            &kp COMMA            &kp DOT  &mt RIGHT_COMMAND SLASH
+&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 5 LANGUAGE_2  &lt 6 SPACE  &mt RIGHT_CONTROL LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                                 &kp RIGHT_SHIFT
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         NUM {
@@ -103,23 +114,12 @@
         mouse {
             bindings = <
 &Mac        &Surface  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &trans  &trans    &trans  &trans    &trans
-&trans      &trans    &trans        &trans        &trans        &bootloader      &trans  &trans  &mkp MB1  &sl 2   &mkp MB2  &trans
+&trans      &trans    &trans        &trans        &trans        &bootloader      &trans  &trans  &mkp MB1  &sl 3   &mkp MB2  &trans
 &trans      &trans    &trans        &trans        &trans        &trans           &trans  &trans  &trans    &trans  &trans    &trans
 &kp ESCAPE  &trans    &trans        &trans        &trans        &trans           &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
-        };
-
-        SurfaceDef {
-            bindings = <
-&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                              &kp Y            &kp U            &kp I                &kp O    &mt P RIGHT_ALT
-&kp A           &kp S                      &kp D                        &kp F             &kp G        &mt C_VOL_DN C_VOL_DN        &mt C_VOL_UP C_VOL_UP    &kp H            &mt RIGHT_WIN J  &mt RIGHT_CONTROL K  &lt 2 L  &lt 3 MINUS
-&kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                     &mkp MB2                 &kp N            &kp M            &kp COMMA            &kp DOT  &mt SLASH RIGHT_WIN
-&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 5 LANGUAGE_2  &lt 6 SPACE  &mt RIGHT_CONTROL LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                                 &kp RIGHT_SHIFT
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         SurfaceNum {
