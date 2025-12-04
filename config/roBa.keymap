@@ -19,7 +19,12 @@
         surface: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&macro_wait_time 400>, <&to 4>;
+            bindings =
+                <&tog_off 0 &tog_off 4>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 400>,
+                <&tog_on 4>;
 
             label = "TO_LAYER_0";
         };
@@ -119,6 +124,15 @@
 &kp LEFT_SHIFT  &mt C_VOL_UP C_VOL_UP  &mt C_BRI_INC C_BRI_INC  &kp C_AC_HOME  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp K_MUTE            &mt UP_ARROW UP_ARROW      &kp QUESTION           &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
 &trans          &mt C_VOL_DN C_VOL_DN  &mt C_BRI_DEC C_BRI_DEC  &kp LEFT_ALT   &kp LEFT_CONTROL                      &kp LEFT_COMMAND      &mt DOWN_ARROW DOWN_ARROW  &kp UNDER              &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH
 &kp ESCAPE      &trans                 &trans                   &trans         &trans                                &trans                &mt LEFT LEFT_ARROW        &mt RIGHT RIGHT_ARROW                                                              &kp TAB
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
