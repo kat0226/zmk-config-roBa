@@ -55,6 +55,11 @@
     };
 
     macros {
+       to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>;
+        };
         mac: mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
