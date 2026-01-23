@@ -135,12 +135,12 @@
             >;
         };
 
-        SCROLL {
+        WinNum {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans          &trans                 &trans                 &trans         &trans                                                                                 &kp ASTRK                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+&kp LEFT_SHIFT  &mt C_VOL_UP C_VOL_UP  &mt C_BRI_UP C_BRI_UP  &kp C_AC_HOME  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp K_MUTE            &mt UP_ARROW UP_ARROW      &kp SLASH                    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&trans          &mt C_VOL_DN C_VOL_DN  &mt C_BRI_DN C_BRI_DN  &kp LEFT_ALT   &kp LEFT_CONTROL                      &kp LEFT_COMMAND      &mt DOWN_ARROW DOWN_ARROW  &kp NUMBER_0                 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
+&kp ESC         &trans                 &trans                 &trans         &trans                                &trans                &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW                                            &kp TAB
             >;
         };
 
