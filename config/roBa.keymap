@@ -88,10 +88,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                           &kp Y            &kp U                &kp I                &kp O    &kp P
-&kp A           &kp S                      &kp D                        &kp F             &kp G        &mt C_VOL_DN C_VOL_DN       &mt C_VOL_UP C_VOL_UP  &kp H            &mt RIGHT_CONTROL J  &mt RIGHT_COMMAND K  &lt 3 L  &lt 4 MINUS
-&kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                    &mkp MB2               &kp N            &kp M                &kp COMMA            &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 2 LANGUAGE_2  &lt 3 SPACE  &mt LEFT_COMMAND LANG1      &mt DELETE DELETE      &mt ENTER ENTER                                                     &kp RIGHT_SHIFT
+&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                             &kp Y            &kp U                &kp I                &kp O    &kp P
+&kp A           &kp S                      &kp D                        &kp F             &kp G        &mt C_VOL_DN C_VOL_DN       &mt C_VOL_UP C_VOL_UP    &kp H            &mt RIGHT_CONTROL J  &mt RIGHT_COMMAND K  &lt 3 L  &lt 4 MINUS
+&kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                    &mkp MB2                 &kp N            &kp M                &kp COMMA            &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 2 LANGUAGE_2  &lt 3 SPACE  &mt LEFT_COMMAND LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                                     &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -99,10 +99,10 @@
 
         WinDef {
             bindings = <
-&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                           &kp Y            &kp U                &kp I                &kp O       &mt RIGHT_ALT P
-&kp A           &kp S                      &kp D                        &kp F             &kp G        &mt C_VOL_DN C_VOL_DN       &mt C_VOL_UP C_VOL_UP  &kp H            &mt RIGHT_COMMAND J  &mt RIGHT_CONTROL K  &lt 3 L     &lt 4 MINUS
-&kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                    &mkp MB2               &kp N            &kp M                &kp COMMA            &kp PERIOD  &mt RIGHT_COMMAND SLASH
-&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 5 LANGUAGE_2  &lt 3 SPACE  &mt LEFT_CONTROL LANG1      &mt DEL DEL            &mt ENTER ENTER                                                        &kp RIGHT_SHIFT
+&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                             &kp Y            &kp U                &kp I                &kp O       &mt RIGHT_ALT P
+&kp A           &kp S                      &kp D                        &kp F             &kp G        &mt C_VOL_DN C_VOL_DN       &mt C_VOL_UP C_VOL_UP    &kp H            &mt RIGHT_COMMAND J  &mt RIGHT_CONTROL K  &lt 3 L     &lt 4 MINUS
+&kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                    &mkp MB2                 &kp N            &kp M                &kp COMMA            &kp PERIOD  &mt RIGHT_COMMAND SLASH
+&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 5 LANGUAGE_2  &lt 3 SPACE  &mt LEFT_CONTROL LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                                        &kp RIGHT_SHIFT
             >;
         };
 
