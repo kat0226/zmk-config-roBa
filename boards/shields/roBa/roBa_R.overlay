@@ -21,9 +21,7 @@
         18 // J
         20 // L
     >;
-    require-prior-idle-ms = <200>;
 };
-
 
 / {
     trackball_listener: trackball_listener {
