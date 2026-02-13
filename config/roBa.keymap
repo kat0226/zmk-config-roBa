@@ -118,7 +118,7 @@
         Symbol {
             bindings = <
 &trans          &trans                 &trans                 &trans            &mt UP_ARROW UP_ARROW                                                      &kp EXCLAMATION              &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT
-&kp LEFT_SHIFT  &mt C_VOL_UP C_VOL_UP  &mt C_BRI_UP C_BRI_UP  &kp C_AC_HOME     &mt DOWN_ARROW DOWN_ARROW  &kp K_MUTE           &mt UP_ARROW UP_ARROW      &kp QUESTION                 &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
+&kp LEFT_SHIFT  &mt C_VOL_UP C_VOL_UP  &mt C_BRI_UP C_BRI_UP  &kp C_AC_HOME     &mt DOWN_ARROW DOWN_ARROW  &kp K_MUTE           &mt UP_ARROW UP_ARROW      &kp QUESTION                 &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &mt RIGHT_CONTROL SEMICOLON
 &kp LEFT_ALT    &mt C_VOL_DN C_VOL_DN  &mt C_BRI_DN C_BRI_DN  &kp LEFT_COMMAND  &kp LEFT_CONTROL           &kp PRINTSCREEN      &mt DOWN_ARROW DOWN_ARROW  &kp UNDER                    &kp AMPERSAND  &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH
 &kp ESC         &trans                 &trans                 &trans            &trans                     &trans               &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW                                                              &kp TAB
             >;
