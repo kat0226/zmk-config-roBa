@@ -1,4 +1,4 @@
-#include "roBa.dtsi"
+ #include "roBa.dtsi"
 #include <input/processors.dtsi>
 
 &default_transform {
@@ -28,11 +28,10 @@
 };
 
 / {
-    trackball_listener: trackball_listener {
+    trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
         input-processors = <&zip_temp_layer 2 1200>; // AML
 
     };
