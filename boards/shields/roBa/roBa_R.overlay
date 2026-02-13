@@ -19,7 +19,7 @@
 
 &zip_temp_layer {
     excluded-positions = <
-        14 // F
+        13 // Fj
         18 // J
         20 // L
     >;
@@ -33,13 +33,13 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 6 1200>; // AML
+        input-processors = <&zip_temp_layer 2 1200>; // AML
 
     };
 };
 
 &pinctrl {
-    spi0_default: spi0_default {
+    spi0_default: spi0_default {j
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 4)>,
