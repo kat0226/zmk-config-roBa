@@ -15,13 +15,16 @@
             ;
 };
 
+// 非マウスキーでAML解除
+
 &zip_temp_layer {
     excluded-positions = <
         14 // F
         18 // J
         20 // L
-        require-prior-idle-ms = <200>;
     >;
+    require-prior-idle-ms = <200>;
+    // トラボ誤爆防止
 };
 
 / {
@@ -30,7 +33,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 6 1200>;
+        input-processors = <&zip_temp_layer 6 1200>; // AML
 
     };
 };
