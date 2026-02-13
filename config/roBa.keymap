@@ -36,6 +36,11 @@
             bindings = <&bl BL_TOG>;
             key-positions = <13 12 11>;
         };
+
+        test {
+            bindings = <&trans>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
