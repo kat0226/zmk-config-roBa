@@ -99,10 +99,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                             &kp Y            &kp U  &kp I      &kp O       &lt 4 P
-&kp A           &kp S                      &lt 3 D                      &kp F             &kp G        &mt C_VOL_DN C_VOL_DN       &mt C_VOL_UP C_VOL_UP    &kp H            &kp J  &kp K      &kp L       &lt 3 MINUS
+&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                             &kp Y            &kp U  &kp I      &kp O       &lt 6 P
+&kp A           &kp S                      &lt 5 D                      &kp F             &kp G        &mt C_VOL_DN C_VOL_DN       &mt C_VOL_UP C_VOL_UP    &kp H            &kp J  &kp K      &kp L       &lt 5 MINUS
 &kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                    &mkp MB2                 &kp N            &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_CONTROL SLASH
-&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 2 LANGUAGE_2  &lt 3 SPACE  &mt LEFT_COMMAND LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 4 LANGUAGE_2  &lt 5 SPACE  &mt LEFT_COMMAND LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -110,10 +110,28 @@
 
         WinDef {
             bindings = <
-&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                             &kp Y            &kp U  &kp I      &kp O       &lt 4 P
-&kp A           &kp S                      &lt 3 D                      &kp F             &kp G        &mt C_VOL_DN C_VOL_DN       &mt C_VOL_UP C_VOL_UP    &kp H            &kp J  &kp K      &kp L       &lt 3 MINUS
+&kp Q           &kp W                      &kp E                        &kp R             &kp T                                                             &kp Y            &kp U  &kp I      &kp O       &lt 6 P
+&kp A           &kp S                      &lt 5 D                      &kp F             &kp G        &mt C_VOL_DN C_VOL_DN       &mt C_VOL_UP C_VOL_UP    &kp H            &kp J  &kp K      &kp L       &lt 5 MINUS
 &kp Z           &kp X                      &kp C                        &kp V             &kp B        &mkp MB1                    &mkp MB2                 &kp N            &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_COMMAND SLASH
-&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 5 LANGUAGE_2  &lt 3 SPACE  &mt LEFT_CONTROL LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW  &lt 3 LANGUAGE_2  &lt 5 SPACE  &mt LEFT_CONTROL LANG1      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                &kp RIGHT_SHIFT
+            >;
+        };
+
+        mouselayer {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans                         &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &mkp MB1   &trans  &trans         &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &trans  &trans  &trans     &trans  &trans         &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &kp LANG2  &trans  &kp LANG1      &trans  &trans                              &trans
+            >;
+        };
+
+        WinNum {
+            bindings = <
+&trans          &trans                 &trans                 &trans         &trans                                                                                 &kp ASTRK                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+&kp LEFT_SHIFT  &mt C_VOL_UP C_VOL_UP  &mt C_BRI_UP C_BRI_UP  &kp C_AC_HOME  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp K_MUTE            &mt UP_ARROW UP_ARROW      &kp SLASH                    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&trans          &mt C_VOL_DN C_VOL_DN  &mt C_BRI_DN C_BRI_DN  &kp LEFT_ALT   &kp LEFT_CONTROL                      &kp LEFT_COMMAND      &mt DOWN_ARROW DOWN_ARROW  &kp NUMBER_0                 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
+&kp ESC         &trans                 &trans                 &trans         &trans                                &trans                &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW                                            &kp TAB
             >;
         };
 
@@ -140,27 +158,9 @@
         Bluetooth {
             bindings = <
 &mac    &zfold6      &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans       &trans          &trans        &trans        &trans      &trans  &trans  &mkp MB1  &sl 3   &mkp MB2  &trans
+&trans  &trans       &trans          &trans        &trans        &trans      &trans  &trans  &mkp MB1  &sl 5   &mkp MB2  &trans
 &trans  &trans       &trans          &trans        &trans        &trans      &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &bootloader  &bt BT_CLR_ALL  &trans        &trans        &trans      &trans  &trans                              &trans
-            >;
-        };
-
-        WinNum {
-            bindings = <
-&trans          &trans                 &trans                 &trans         &trans                                                                                 &kp ASTRK                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-&kp LEFT_SHIFT  &mt C_VOL_UP C_VOL_UP  &mt C_BRI_UP C_BRI_UP  &kp C_AC_HOME  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp K_MUTE            &mt UP_ARROW UP_ARROW      &kp SLASH                    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&trans          &mt C_VOL_DN C_VOL_DN  &mt C_BRI_DN C_BRI_DN  &kp LEFT_ALT   &kp LEFT_CONTROL                      &kp LEFT_COMMAND      &mt DOWN_ARROW DOWN_ARROW  &kp NUMBER_0                 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
-&kp ESC         &trans                 &trans                 &trans         &trans                                &trans                &mt LEFT_ARROW LEFT_ARROW  &mt RIGHT_ARROW RIGHT_ARROW                                            &kp TAB
-            >;
-        };
-
-        mouselayer {
-            bindings = <
-&trans  &trans  &trans  &trans     &trans                         &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &mkp MB1   &trans  &trans         &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans     &trans  &trans         &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &kp LANG2  &trans  &kp LANG1      &trans  &trans                              &trans
             >;
         };
     };
